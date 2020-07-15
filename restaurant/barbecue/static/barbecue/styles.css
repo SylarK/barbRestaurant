@@ -1,0 +1,105 @@
+html, body{
+
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+/* Classes */
+
+.marker{
+
+    border: 2px solid red;
+
+}
+
+.center-div{
+
+    padding-top: 15vh;
+    font-family: 'Cormorant Garamond';
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
+    
+    
+
+}
+
+.custom-navbar{
+
+    font-family: 'Montserrat';
+
+}
+
+
+/* ID's */
+
+#navbar_brand{
+
+    
+    background: url(../img/barb_brand.svg);
+    background-size: contain;   
+    height: 12vh;
+    width: 12vh;
+
+}
+
+#background_index {
+
+    background-image: url('../img/steak_index.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: static;
+    max-width: 100%;
+    height: 90vh;
+    animation: backindex 4s forwards;
+
+}
+
+#welcome_f{
+
+   
+    font-size: 15vh;
+    position: relative;
+    animation-name: restaurant;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    margin-bottom: -5vh;
+    
+    
+
+}
+
+#welcome_l{
+
+    font-size: 15vh;
+    position: relative;
+    animation-name: barbecue;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes restaurant {
+    
+    0%{ transform: translateX(-50%);}
+
+}
+
+@keyframes barbecue {
+    
+    0%{ transform: translateX(50%);}
+
+}
+
+@keyframes backindex {
+
+    from {filter: grayscale(60%);}
+    to {filter: grayscale(0%)}
+
+}

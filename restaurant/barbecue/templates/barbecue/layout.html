@@ -33,19 +33,19 @@
             <div class="collapse navbar-collapse" id="navbarBarbecue">                             
                     <ul class="navbar-nav ml-auto" id="itensNavbar">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="{% url 'index'%}">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Link</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">About us</a>
+                        <a class="nav-link" href="{% url 'about' %}">About us</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Menu</a>
+                        <a class="nav-link" href="{% url 'menu' %}">Menu</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Reservation</a>
+                        <a class="nav-link" href="{% url 'reservation' %}">Reservation</a>
                     </li>
                     <li class="nav-item active ">
                         <a class="nav-link" href="#">Contacts</a>

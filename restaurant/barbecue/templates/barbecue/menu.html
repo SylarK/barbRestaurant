@@ -1,0 +1,217 @@
+{% extends 'barbecue/layout.html' %}
+
+{% block title %}
+
+    Our menu
+
+{% endblock %}
+
+{% block body %}
+
+    <div class="container">
+    
+        <!-- Row with options -->
+        <div class="row menu-title d-flex justify-content-center">
+            <p><span id="beef">BEEF STEAK</span>&nbsp - </p>
+            <p>&nbsp<span id="mega">MEGA BURGUER</span>&nbsp - </p>
+            <p>&nbsp<span id="nullan">NULLAN DICTUM</span>&nbsp - </p>
+            <p>&nbsp<span id="master">BURGUER MASTER</span>&nbsp - </p>
+            <p>&nbsp<span id="sallad">CAESAR SALLAD</span>&nbsp</p>
+        </div>
+
+        <!-- div options (hidden) -->
+        <div id="beef_burguer">
+
+            <div class="content-menu d-flex justify-content-center">
+
+                <div class="box-menu"><img src="../../static/img/beef-steak.jpg" class="img-menu" alt=""></div>
+                <div class="box-menu">
+                    
+                    <h4>BEEF BURGUER</h4>
+                    <p>
+                        In tempor efficitur risus, in tincidunt felis vestibulum at.<br>
+                        Mauris non elit ultricies, commodo eros ut, suscipit diam. Nullam et egestas metus. <br>
+                        Donec posuere metus ac auctor egestas. Aenean pulvinar fermentum justo. <br>
+                        Donec ut quam posuere, lacinia leo vel, varius nisl. Cras eu arcu nulla. <br>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="mega_burguer">
+
+            <div class="content-menu d-flex justify-content-center displayMenu">
+
+                <div class="box-menu"><img src="../../static/img/mega-burguer.jpg" class="img-menu" alt=""></div>
+                <div class="box-menu">
+                    
+                    <h4>MEGA BURGUER</h4>
+                    <p>
+                        Donec posuere metus ac auctor egestas. Aenean pulvinar fermentum justo. <br>
+                        Mauris non elit ultricies, commodo eros ut, suscipit diam. Nullam et egestas metus. <br>
+                        Donec ut quam posuere, lacinia leo vel, varius nisl. Cras eu arcu nulla. <br>
+                        In tempor efficitur risus, in tincidunt felis vestibulum at.<br>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="nullan_dictum">
+
+            <div class="content-menu d-flex justify-content-center">
+
+                <div class="box-menu"><img src="../../static/img/nullan-dict.jpg" class="img-menu" alt=""></div>
+                <div class="box-menu">
+                    
+                    <h4>NULLAN DICTUM</h4>
+                    <p>
+                        In tempor efficitur risus, in tincidunt felis vestibulum at.<br>
+                        Donec ut quam posuere, lacinia leo vel, varius nisl. Cras eu arcu nulla. <br>
+                        Donec posuere metus ac auctor egestas. Aenean pulvinar fermentum justo. <br>
+                        Mauris non elit ultricies, commodo eros ut, suscipit diam. Nullam et egestas metus. <br>                       
+                        
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="master_burguer">
+
+            <div class="content-menu d-flex justify-content-center">
+
+                <div class="box-menu"><img src="../../static/img/master-burguer.jpg" class="img-menu" alt=""></div>
+                <div class="box-menu">
+                    
+                    <h4>MASTER BURGUER</h4>
+                    <p>
+                        Donec ut quam posuere, lacinia leo vel, varius nisl. Cras eu arcu nulla. <br>
+                        Donec posuere metus ac auctor egestas. Aenean pulvinar fermentum justo. <br>
+                        Mauris non elit ultricies, commodo eros ut, suscipit diam. Nullam et egestas metus. <br>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="sallad_caesar">
+
+            <div class="content-menu d-flex justify-content-center">
+
+                <div class="box-menu"><img src="../../static/img/sallad-caeser.jpg" class="img-menu" alt=""></div>
+                <div class="box-menu">
+                    
+                    <h4>SALAD CAESAR</h4>
+                    <p>
+                        In tempor efficitur risus, in tincidunt felis vestibulum at.<br>
+                        Mauris non elit ultricies, commodo eros ut, suscipit diam. Nullam et egestas metus. <br>                                               
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+
+    </div>
+    
+    <script>
+
+        
+        document.querySelector('#beef').onclick = function(){
+
+                x = document.querySelector('#beef_burguer')
+
+                if(x.style.display == 'block'){
+
+                    x.style.display = 'none'
+
+                } else {
+
+                    x.style.display = 'block' 
+
+                }x
+
+        }
+
+        document.querySelector('#mega').onclick = function(){
+
+                x = document.querySelector('#mega_burguer')
+
+                if(x.style.display == 'block'){
+
+                    x.style.display = 'none'
+
+                } else {
+
+                    x.style.display = 'block' 
+
+                }
+
+            }
+        document.querySelector('#nullan').onclick = function(){
+
+                x = document.querySelector('#nullan_dictum')
+
+                if(x.style.display == 'block'){
+
+                    x.style.display = 'none'
+
+                } else {
+
+                    x.style.display = 'block' 
+
+                }
+
+            }
+        document.querySelector('#master').onclick = function(){
+
+                x = document.querySelector('#master_burguer')
+
+                if(x.style.display == 'block'){
+
+                    x.style.display = 'none'
+
+                } else {
+
+                    x.style.display = 'block' 
+
+                }
+
+            }
+        document.querySelector('#sallad').onclick = function(){
+
+                x = document.querySelector('#sallad_caesar')
+
+                if(x.style.display == 'block'){
+
+                    x.style.display = 'none'
+
+                } else {
+
+                    x.style.display = 'block' 
+
+                }
+
+            }
+
+        
+
+
+
+    </script>
+
+
+
+{% endblock %}

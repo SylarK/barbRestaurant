@@ -11,18 +11,19 @@
     <div class="container">
         
         <div id="background_reservation">
-
-            <div class="d-flex form-reservation justify-content-center">
-
-                        <div class="row">
-                            <input type="date">
-                        </div>
-                        <div class="row">
-                            <input type="time">
-                        </div>
-                        <div class="row">
-                            <button type="submit" class="btn btn-primary">Take your reservation!</button>
-                        </div>    
+            
+                        <form action="" method="post">
+                            {% csrf_token %}
+                            <div class="form_reservation">
+                                <input type="date" name="date_reserve" id="date_reserve" required>
+                            </div>
+                            <div class="form_reservation" >
+                                <input type="time" name="time_reserve" id="time_reserve" required>
+                            </div>
+                            <div class="form_reservation">
+                                <input type="submit" class="btn btn-dark" value="Take your reservation">
+                            </div>   
+                        </form>
         
             </div>
 

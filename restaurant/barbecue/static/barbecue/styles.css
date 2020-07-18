@@ -89,14 +89,26 @@ html, body{
 }
 
 .form_reservation{
+   
+    margin-left: 3vh;
+    opacity: 80%;
+    width: 100%; 
+    
+}
 
-    flex-direction: column;
+.form_reservation>input{
 
+    width: 100%;
+    cursor: pointer;
+    margin-top: 1vh;
 
 }
 
+.form_reservation:hover{
 
+    opacity: 100%;
 
+}
 
 
 /* ID's */
@@ -133,6 +145,9 @@ html, body{
     height: 90vh;
     filter: grayscale(70%);
     /*animation: backindex 4s forwards;*/
+    display: flex;    
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -201,6 +216,15 @@ html, body{
 #beef_burguer, #mega_burguer,#nullan_dictum, #master_burguer, #sallad_caesar{
 
     display: none;
+
+}
+
+#box_reservation{
+
+    background-color: gainsboro;
+    background-size: contain;
+    height: 50vh;
+    align-items: center;
 
 }
 

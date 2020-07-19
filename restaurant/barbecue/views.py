@@ -1,4 +1,5 @@
 from django.shortcuts import render
+import random
 
 # Create your views here.
 
@@ -22,12 +23,18 @@ def reservation(request):
     else:
         time_reserve = request.POST['time_reserve']
         date_reserve = request.POST['date_reserve']    
+        reserve_number = random.randint(0, 1000)
 
         return render(request, "barbecue/confirm.html", {
-
+           
             'time_reserve':time_reserve,
-            'date_reserve':date_reserve
-
+            'date_reserve':date_reserve,
+            'reserve_number': reserve_number
+        
         })
+
+def contact(request):
+
+    return render(request, "barbecue/contact.html")
     
 

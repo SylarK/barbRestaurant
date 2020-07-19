@@ -10,12 +10,23 @@
 
     <div class="container">
 
-        <div class="d-flex justify-content-center marker" id="box_reservation">
+        <div class="d-flex justify-content-center" id="box_reservation">
 
-            <div id="confirm_reservation">
+            <div id="confirm_reservation" class="marker">
 
-                <p>Progressive bar</p>
-                <p>Confirmation msg</p>
+                <div class="row d-flex justify-content-center">
+                    <span><img src="../../static/img/accept.svg" alt=""></span>
+                </div>
+                <br><h3>Thank you</h3>
+                <br><p>Your reservation has been confirmed.</p>
+                <p>Reservation number: {{ reserve_number }} </p>
+                <div class="d-flex justify-content-center">
+
+                    <p>{{ date_reserve }}</p>
+                    <p>{{ time_reserve }}</p>
+
+                </div>
+
 
             </div> 
 

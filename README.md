@@ -9,4 +9,4 @@ posteriormente temos a aplicação dos menus, onde temos a opção de ver cada o
 reserva em nosso restaurante, o que após a confirmação do horário e data, somos redirecionados a outra página que gera um número de reserva para o cliente. Por fim temos uma tela
 de contato com icones que remetem ao respectivos contatos.
 
-``Link de demonstração da aplicação: https://www.youtube.com/watch?v=TGIzhL7y4YI``
+``Link de demonstração da aplicação: (https://www.youtube.com/watch?v=TGIzhL7y4YI)``
